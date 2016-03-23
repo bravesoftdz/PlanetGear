@@ -13,12 +13,12 @@ Type
     i_h: byte; // Передаточное отношение.
     Omega_1: extended; // Частота вращения солнечной шестерни [об/мин].
     ts: extended; // Ресурс [час].
-    Mark_Steel: string; // Марка стали.
-    Termobr: string; // Термообработка.
+    Mark_Steel1, Mark_Steel2, Mark_Steel3: string; // Марка стали.
+    Termobr1, Termobr2, Termobr3: string; // Термообработка.
   end;
 
   TOutput = record
-    z1, z2_1, z2_2, z3_1, z3_2: integer; // Чмсла зубьев.
+    z1, z2_1, z2_2, z3_1, z3_2: integer; // Числа зубьев.
     P_2, P_3: extended; // Мощность [кВт].
     Omega_2: extended; // Частота вращения сателлитов [об/мин].
     Omega_Vod_2: extended; // Частота вращения вала водила [об/мин].
