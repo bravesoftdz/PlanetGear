@@ -7,17 +7,17 @@ unit InputOutputFile_2KH_1;
 interface
 
 Type
-  TInput = record
+  TInput_PlanetGear_2KH_1 = record
     P_1: extended; // Мощность ведущей солнечной шестерни [кВт].
     Count_sat: byte; // Число сателлитов.
     i_h: byte; // Передаточное отношение.
     Omega_1: extended; // Частота вращения солнечной шестерни [об/мин].
     ts: extended; // Ресурс [час].
-    Mark_Steel: string; // Марка стали.
-    Termobr: string; // Термообработка.
+    Mark_Steel1, Mark_Steel2, Mark_Steel3: string; // Марка стали.
+    Termobr1, Termobr2, Termobr3: string; // Термообработка.
   end;
 
-  TOutput = record
+  TOutput_PlanetGear_2KH_1 = record
     z1, z2, z3: integer; // Чмсла зубьев.
     P_2, P_3: extended; // Мощность [кВт].
     Omega_2: extended; // Частота вращения сателлитов [об/мин].
@@ -35,7 +35,8 @@ Type
     Fh_2: extended; // Сила, действующая на ось сателлита [Н].
     Sigma_H_12, Sigma_H_23: extended; // Рабочее контактное напряжение [МПа].
     Sigma_H: extended; // Допускаемое контактное напряжение [МПа].
-    Sigma_F_1, Sigma_F_2, Sigma_F_3: extended; // Рабочее изгибное напряжение [МПа].
+    Sigma_F_1, Sigma_F_2, Sigma_F_3: extended;
+    // Рабочее изгибное напряжение [МПа].
     Sigma_F: extended; // Допускаемое изгибное напряжение [МПа].
   end;
 
